@@ -1,3 +1,5 @@
+//code to find maximum length pallindromic substring in O(n) and finding all 
+//substrings of this maximum length
 #include <cstdio>
 #include <algorithm>
 #include <vector>
