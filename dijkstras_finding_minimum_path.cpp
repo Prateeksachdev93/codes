@@ -5,6 +5,9 @@
 #include <queue>
 #include <set>
 using namespace std;
+/*Takes input nodes numbered from 1-n
+output minimum length and the path from node 1 to node n
+*/
 
 typedef pair<long long,int> pii;
 
@@ -58,8 +61,10 @@ int main()
 		printf("-1\n");
 		return 0;
 	}
+	cout << "minimum path length = " << d[n-1]<<endl;
 	for (int i=n-1; i!=-1; i=p[i])
 		ans.push_back(i);
+	cout<< "path followed = ";
 	for (int i=ans.size()-1; i>=0; i--)
 		printf("%d ",ans[i]+1);
 	printf("\n");
