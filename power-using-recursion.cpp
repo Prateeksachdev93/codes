@@ -3,7 +3,7 @@
 
 using namespace std; 
 
-#define MOD 10000000007
+#define M 10000000007
 long long int power(long long int n,long long int m);
 int main()
 {
@@ -14,11 +14,13 @@ int main()
 
 }
 
+
 long long int power(long long int num, long long int pow)
 {
+	//cout << num<<endl;
     if (pow == 0) return 1;
     if (pow % 2 == 0)
-        return power(num*num, pow / 2);
+        return power(((num%M)*(num%M))%M, pow / 2)%M;
     else
-        return power(num, pow - 1) * num;
+        return ((power(num, pow - 1)%M) * (num%M))%M;
 }
