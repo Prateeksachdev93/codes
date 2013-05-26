@@ -62,15 +62,16 @@ int main() {
 	 {
 	 	if(xx==0)
 	 		break;
-	 	counter =0;
-		node = 0;
-		dig_count = 0;
+	 	
 	 	norm=1;
 		for(i=1; i < xx; i++)
 			norm*=10;
 			
 		for(node=0; node < norm; node++) 
 			state[node] = 0;
+		counter =0;
+		node = 0;
+		dig_count = 0;
 		
 		while(1)
 		 {
@@ -90,7 +91,6 @@ int main() {
 		}
 		for(i = 0; i < xx-1; i++)
 			 ans[dig_count++] = ans[i];
-		
 		ans[dig_count] = 0; 
 		printf("%s\n",ans);
 	}
