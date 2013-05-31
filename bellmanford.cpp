@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<assert.h>
+#include <stdio.h>
+#include <assert.h>
 /* maxVertices represents maximum number of vertices that can be present in the graph. */
 #define maxVertices   100
 #define INF 123456789
