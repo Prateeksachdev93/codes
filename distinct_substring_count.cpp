@@ -24,7 +24,6 @@
 #include <algorithm>
 #include <iterator>
 #include <utility>
-
 using namespace std;
 
 typedef vector<int > vd;
