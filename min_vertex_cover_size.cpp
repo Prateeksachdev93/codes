@@ -20,16 +20,12 @@ int main()
     adj[b].push_back(a);
     deg[a]++;
     deg[b]++;
-  }
-  
-  
+  }  
   for(int i = 0; i < n; i++)
     if(deg[i] == 1) 
     	q[++top]=i;
-  
- 
+
   int result = 0;
-  
   while(top>0){
   
      v=q[top];top--;
